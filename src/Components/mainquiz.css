@@ -1,0 +1,70 @@
+
+body{
+    background-image: url(../images/pic1.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.logo{
+    height: 70px;
+}
+
+.mainheading{
+    font-family: 'Lobster', cursive;
+    /* font-size: 5vw; */
+}
+.quizimage{
+    border-radius: 20rem;
+    text-align: center;
+    height: 400px;
+}
+.cube{
+    animation: rubix 10s infinite;
+    height: 190px;
+    position: absolute;
+    top: 250px;
+}
+@keyframes rubix{
+
+ 0%{
+    left: 50px;
+ }
+ 50%{
+    transform: rotate(360deg);
+    left: 450px;
+}
+100%{
+    left: 50px;
+}
+
+
+}
+.startbtn{
+       background-color: blueviolet;
+       border: none;
+       box-shadow: 5px 5px 5px black;
+       width: 100px;
+       height: 40px;
+}
+.startbtn:hover{
+    background-color: black;
+    box-shadow: 5px 5px 5px blueviolet;
+    color: blueviolet;
+
+}
+.pic3{
+    width: 20rem;
+    height: 250px;
+}
+.box{
+    height: 250px;
+}
+.flip{
+    transform: translate(0,-250);
+    transition: 3s;
+}
+.box:hover .flip{
+    transform: translate(0,0);
+
+}
